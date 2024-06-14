@@ -10,12 +10,9 @@
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>FURNiture</title>
     <script type="text/javascript">
-        // 현재 경로가 이미 리다이렉트된 경우를 방지합니다.
         var path = window.location.pathname;
-        if (!path.includes('/index.html')) {
-            var newPath = '/FURNiture/index.html?redirect=' + encodeURIComponent(path);
-            window.location.replace(newPath);
-        }
+        var newPath = path.replace(/\/FURNiture/, '/FURNiture/$1');
+        window.location.replace(newPath);
     </script>
 </head>
 <body>
