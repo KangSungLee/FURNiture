@@ -10,9 +10,13 @@
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>FURNiture</title>
     <script type="text/javascript">
-        var path = window.location.pathname;
-        var newPath = path.replace(/\/FURNiture\/(.*)/, '/FURNiture/$1');
-        window.location.replace(newPath);
+        // 현재 URL에 'redirected' 쿼리 파라미터가 없는 경우에만 리다이렉트
+        var params = new URLSearchParams(window.location.search);
+        if (!params.has('redirected')) {
+            var path = window.location.pathname;
+            var newPath = '/FURNiture/index.html?redirected=true&path=' + encodeURIComponent(path);
+            window.location.replace(newPath);
+        }
     </script>
 </head>
 <body>
