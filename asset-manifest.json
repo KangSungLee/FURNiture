@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/FURNiture/static/css/main.3abcc4aa.css",
+    "main.js": "/FURNiture/static/js/main.16ead817.js",
+    "static/js/206.f849acde.chunk.js": "/FURNiture/static/js/206.f849acde.chunk.js",
+    "static/media/carousel2.png": "/FURNiture/static/media/carousel2.820c2c4a76b5ee8ac58a.png",
+    "static/media/carousel1.png": "/FURNiture/static/media/carousel1.d26257640aa1031d4780.png",
+    "index.html": "/FURNiture/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.3abcc4aa.css",
+    "static/js/main.16ead817.js"
+  ]
+}
